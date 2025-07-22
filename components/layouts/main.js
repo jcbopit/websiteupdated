@@ -1,8 +1,4 @@
 import Head from 'next/head'
-<<<<<<< HEAD
-import dynamic from 'next/dynamic'
-=======
->>>>>>> 7ccbc12 (Initial commit)
 import NavBar from '../navbar'
 import { Box, Container } from '@chakra-ui/react'
 import Footer from '../footer'

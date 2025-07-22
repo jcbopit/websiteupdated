@@ -3,20 +3,11 @@
   "version": "1.0.0",
   "description": "Takuya's website",
   "scripts": {
-<<<<<<< HEAD
-    "dev": "next dev -H 0.0.0.0",
+    "dev": "next dev",
     "build": "next build",
-    "start": "next start",
-    "prettier": "prettier --write .",
-    "lint": "next lint"
+    "export": "next export",
+    "start": "next start"
   },
-=======
-  "dev": "next dev",
-  "build": "next build",
-  "export": "next export",
-  "start": "next start"
-},
->>>>>>> 7ccbc12 (Initial commit)
   "keywords": [],
   "author": "Takuya Matsuyama",
   "license": "MIT",

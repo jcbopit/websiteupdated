@@ -8,24 +8,14 @@ import {
   Button,
   List,
   ListItem,
-<<<<<<< HEAD
-  useColorModeValue,
-} from '@chakra-ui/react'
-import { ChevronRightIcon, EmailIcon } from '@chakra-ui/icons'
-=======
 } from '@chakra-ui/react'
 import { ChevronRightIcon } from '@chakra-ui/icons'
->>>>>>> 7ccbc12 (Initial commit)
 import Paragraph from '../components/paragraph'
 import { BioSection, BioYear } from '../components/bio'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import { GridItem } from '../components/grid-item'
-<<<<<<< HEAD
-import { FaLinkedin, IoLogoInstagram, IoLogoGithub, IoLogoLinkedin } from 'react-icons/io5'
-=======
 import { IoLogoInstagram, IoLogoGithub, IoLogoLinkedin } from 'react-icons/io5'
->>>>>>> 7ccbc12 (Initial commit)
 import linkedintimeseries from '../public/images/works/linkedintimeseries.png'
 import arxiv from '../public/images/works/arxiv.png'
 import Image from 'next/image'
@@ -57,11 +47,7 @@ const Home = () => (
           </Heading>
 
           <Box as="p" fontSize="xs">
-<<<<<<< HEAD
-            "Metric-driven, theory-curious, and performance-obsessed. I strive to bring unique perspectives to complex problems in any team I contribute to.
-=======
             &quot;Metric-driven, theory-curious, and performance-obsessed. I strive to bring unique perspectives to complex problems in any team I contribute to.&quot;
->>>>>>> 7ccbc12 (Initial commit)
           </Box>
         </Box>
 
@@ -97,13 +83,8 @@ const Home = () => (
           Bio
         </Heading>
         <Paragraph>
-<<<<<<< HEAD
-          I’m a current Junior at Indiana University pursuing dual B.S. degrees in Mathematics and Physics w/ a focus in Computational Physics and minor in Computer Science.
-          I’m passionate about abstract thinking and creatively applying quantitative methods and theory to solve tricky puzzles.
-=======
           I&apos;m a current Junior at Indiana University pursuing dual B.S. degrees in Mathematics and Physics w/ a focus in Computational Physics and minor in Computer Science.
           I&apos;m passionate about abstract thinking and creatively applying quantitative methods and theory to solve tricky puzzles.
->>>>>>> 7ccbc12 (Initial commit)
           Having grown up in Indonesia, Shanghai, Hong Kong, and now the U.S, I maintain a global perspective and a love for diverse culture, intellectual approach, and interdisciplinary collaboration.
         </Paragraph>
         <Box align="center" my={4}>
@@ -122,11 +103,7 @@ const Home = () => (
       {/* Bio Section */}
       <Section delay={0.2}>
         <Heading as="h3" variant="section-title">
-<<<<<<< HEAD
-        CV
-=======
           CV
->>>>>>> 7ccbc12 (Initial commit)
         </Heading>
 
         <BioSection mb={4}>
@@ -166,17 +143,6 @@ const Home = () => (
           Interests
         </Heading>
         <Paragraph>
-<<<<<<< HEAD
-          Pokémon markets: {' '}
-          <Link href="https://app.getcollectr.com/showcase/profile/b3ce4d3e-9157-4961-8d2e-12bfa841572b" target="_blank">
-            collection
-          </Link>{' '}
-          &amp; {' '}
-          <Link href="https://www.ebay.com/usr/jccardscollectibles" target="_blank">
-            shop
-          </Link>
-          , Guitar (JM Silver Sky), Fitness & Personal Training (NASM CPT), Motorcycles (23' ZX6R), and animated shows.
-=======
           Pokémon markets:{' '}
           <Link href="https://app.getcollectr.com/showcase/profile/b3ce4d3e-9157-4961-8d2e-12bfa841572b" target="_blank" rel="noopener noreferrer">
             collection
@@ -186,43 +152,12 @@ const Home = () => (
             shop
           </Link>
           , Guitar (JM Silver Sky), Fitness &amp; Personal Training (NASM CPT), Motorcycles (23&apos; ZX6R), and animated shows.
->>>>>>> 7ccbc12 (Initial commit)
         </Paragraph>
       </Section>
 
       {/* Social Section */}
       <Section delay={0.3} pb={100}>
         <Box pb={10}>
-<<<<<<< HEAD
-        <Heading as="h3" variant="section-title">
-          On the web
-        </Heading>
-        <List>
-          <ListItem>
-            <Link href="https://github.com/jcbopit" target="_blank">
-              <Button variant="ghost" colorScheme="moss" leftIcon={<IoLogoGithub />}>
-                @jcbopit
-              </Button>
-            </Link>
-          </ListItem>
-
-          <ListItem>
-            <Link href="https://www.linkedin.com/in/justinoffutt" target="_blank">
-              <Button variant="ghost" colorScheme="moss" leftIcon={<IoLogoLinkedin />}>
-                Justin Offutt
-              </Button>
-            </Link>
-          </ListItem>
-
-          <ListItem>
-            <Link href="https://instagram.com/suzoomie" target="_blank">
-              <Button variant="ghost" colorScheme="moss" leftIcon={<IoLogoInstagram />}>
-                @suzoomie
-              </Button>
-            </Link>
-          </ListItem>
-        </List>
-=======
           <Heading as="h3" variant="section-title">
             On the web
           </Heading>
@@ -251,7 +186,6 @@ const Home = () => (
               </Link>
             </ListItem>
           </List>
->>>>>>> 7ccbc12 (Initial commit)
         </Box>
 
         <SimpleGrid columns={[1, 2, 2]} gap={6}>

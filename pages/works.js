@@ -3,10 +3,6 @@ import {
   Heading,
   Box,
   SimpleGrid,
-<<<<<<< HEAD
-  Text
-=======
->>>>>>> 7ccbc12 (Initial commit)
 } from '@chakra-ui/react'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
