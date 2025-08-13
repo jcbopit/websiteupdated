@@ -1,7 +1,6 @@
 import {
   Container,
   Heading,
-  Box,
   SimpleGrid,
 } from '@chakra-ui/react'
 import Layout from '../components/layouts/article'
