@@ -5,21 +5,7 @@ import { FaInstagram, FaLinkedin } from 'react-icons/fa'
 const Contact = () => {
   return (
     <>
-      {/* Background image - match the index page */}
-      <Box
-        position="fixed"
-        top="0"
-        left="0"
-        width="100%"
-        height="100%"
-        zIndex={-1}
-        bgImage="url('/images/back3.jpg')"
-        bgRepeat="no-repeat"
-        bgPosition="center"
-        bgSize="cover"
-        opacity={0.15}
-        pointerEvents="none"
-      />
+      {/* Removed background <Box> here */}
 
       <Container maxW="container.md" pt={24}>
         <Heading as="h1" size="xl" mb={8} textAlign="center">

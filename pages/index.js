@@ -22,21 +22,7 @@ import Image from 'next/image'
 
 const Home = () => (
   <Layout>
-    {/* Background image with low opacity */}
-    <Box
-      position="fixed"
-      top="0"
-      left="0"
-      width="100vw"
-      height="100vh"
-      zIndex={-1}
-      bgImage="url('/images/web-back.jpg')"
-      bgRepeat="no-repeat"
-      bgPosition="center"
-      bgSize="cover"
-      opacity={0.15}
-      pointerEvents="none"
-    />
+    {/* Removed background <Box> here */}
 
     <Container pt="100px">{/* Increased top padding for header */}
       {/* Header Section */}
@@ -127,9 +113,10 @@ const Home = () => (
         </BioSection>
 
         <BioSection mb={4}>
-          <BioYear>June 2025 – Present</BioYear>
-          Sales Associate, Best Buy — Exceeded $750+/hr revenue benchmarks by matching customers with high-value tech solutions. Advocated for branded financing and membership offerings, balancing user needs with business KPIs. Learned to sell with empathy, timing, and numbers in mind.
+        <BioYear>August 2025 – Present</BioYear>
+        Personal Trainer, Student Recreational Sports Center (Indiana University) — Designed tailored fitness programs to meet diverse client goals. Educated participants on safe training techniques and sustainable health habits. Built strong client relationships to foster motivation and accountability while aligning with SRSC wellness objectives.
         </BioSection>
+
 
         <BioSection>
           <BioYear>Skills</BioYear>

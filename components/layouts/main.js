@@ -2,11 +2,30 @@ import Head from 'next/head'
 import NavBar from '../navbar'
 import { Box, Container } from '@chakra-ui/react'
 import Footer from '../footer'
+import { useEffect, useState } from 'react'
 
+const backgrounds = {
+  '/': '/images/web-back.jpg',
+  '/contact': '/images/back3.jpg',
+  '/works': '/images/back4.jpg',
+}
 
 const Main = ({ children, router }) => {
+  const [bgImage, setBgImage] = useState(backgrounds[router.route] || backgrounds['/'])
+  const [fade, setFade] = useState(true)
+
+  useEffect(() => {
+    setFade(false) // start fade out
+    const timeout = setTimeout(() => {
+      setBgImage(backgrounds[router.route] || backgrounds['/'])
+      setFade(true) // fade in new background
+    }, 300) // match transition duration
+
+    return () => clearTimeout(timeout)
+  }, [router.route])
+
   return (
-    <Box as="main" pb={8}>
+    <Box as="main" pb={8} position="relative" minHeight="100vh" overflow="hidden">
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="description" content="Takuya's homepage" />
@@ -28,11 +47,25 @@ const Main = ({ children, router }) => {
 
       <NavBar path={router.asPath} />
 
+      {/* Persistent background with fade transition */}
+      <Box
+        position="fixed"
+        top="0"
+        left="0"
+        width="100vw"
+        height="100vh"
+        zIndex={-1}
+        bgImage={`url(${bgImage})`}
+        bgRepeat="no-repeat"
+        bgPosition="center"
+        bgSize="cover"
+        opacity={fade ? 0.15 : 0}
+        transition="opacity 0.3s ease-in-out"
+        pointerEvents="none"
+      />
+
       <Container maxW="container.md" pt={14}>
-        
-
         {children}
-
         <Footer />
       </Container>
     </Box>

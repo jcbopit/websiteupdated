@@ -12,21 +12,7 @@ import workThumb2 from '../public/images/works/arxiv.png'
 
 const Works = () => (
   <Layout title="Works">
-    {/* Background image with low opacity */}
-    <Box
-      position="fixed"
-      top="0"
-      left="0"
-      width="100vw"
-      height="100vh"
-      zIndex={-1}
-      bgImage="url('/images/back4.jpg')"
-      bgRepeat="no-repeat"
-      bgPosition="center"
-      bgSize="cover"
-      opacity={0.15}
-      pointerEvents="none"
-    />
+    {/* Removed background <Box> here */}
 
     <Container pt="100px">
       <Section delay={0.1}>
