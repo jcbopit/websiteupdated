@@ -3,7 +3,6 @@ import {
   Link,
   Container,
   Heading,
-  Box,
   SimpleGrid,
   Button,
   List,
