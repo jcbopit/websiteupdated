@@ -165,16 +165,6 @@ const Home = () => (
               </Link>
             </ListItem>
 
-            <ListItem>
-              <Link href="https://instagram.com/suzoomie" target="_blank" rel="noopener noreferrer">
-                <Button variant="ghost" colorScheme="moss" leftIcon={<IoLogoInstagram />}>
-                  @suzoomie
-                </Button>
-              </Link>
-            </ListItem>
-          </List>
-        </Box>
-
         <SimpleGrid columns={[1, 2, 2]} gap={6}>
           <GridItem
             href="https://www.linkedin.com/feed/update/urn:li:activity:7323033455343058945/"
