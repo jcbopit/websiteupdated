@@ -15,16 +15,14 @@ import { BioSection, BioYear } from '../components/bio'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import { GridItem } from '../components/grid-item'
-import { IoLogoInstagram, IoLogoGithub, IoLogoLinkedin } from 'react-icons/io5'
+import { IoLogoGithub, IoLogoLinkedin } from 'react-icons/io5'
 import linkedintimeseries from '../public/images/works/linkedintimeseries.png'
 import arxiv from '../public/images/works/arxiv.png'
 import Image from 'next/image'
 
 const Home = () => (
   <Layout>
-    {/* Removed background <Box> here */}
-
-    <Container pt="100px">{/* Increased top padding for header */}
+    <Container pt="100px">
       {/* Header Section */}
       <Box display={{ md: 'flex' }}>
         <Box flexGrow={1}>
@@ -37,7 +35,12 @@ const Home = () => (
           </Box>
         </Box>
 
-        <Box flexShrink={0} mt={{ base: 4, md: 0 }} ml={{ md: 6 }} textAlign="center">
+        <Box
+          flexShrink={0}
+          mt={{ base: 4, md: 0 }}
+          ml={{ md: 6 }}
+          textAlign="center"
+        >
           <Box
             borderColor="whiteAlpha.800"
             borderWidth={4}
@@ -56,23 +59,29 @@ const Home = () => (
               style={{
                 objectFit: 'cover',
                 position: 'relative',
-                top: '-15px', // shift image UP inside container by 15px
+                top: '-15px',
               }}
             />
           </Box>
         </Box>
       </Box>
 
-      {/* Work Section */}
+      {/* Bio Section */}
       <Section delay={0.1}>
         <Heading as="h3" variant="section-title">
           Bio
         </Heading>
         <Paragraph>
-          I&apos;m a current Junior at Indiana University pursuing dual B.S. degrees in Mathematics and Physics w/ a focus in Computational Physics and minor in Computer Science.
-          I&apos;m passionate about abstract thinking and creatively applying quantitative methods and theory to solve tricky puzzles.
-          Having grown up in Indonesia, Shanghai, Hong Kong, and now the U.S, I maintain a global perspective and a love for diverse culture, intellectual approach, and interdisciplinary collaboration.
+          I&apos;m a current Junior at Indiana University pursuing dual B.S.
+          degrees in Mathematics and Physics w/ a focus in Computational Physics
+          and minor in Computer Science. I&apos;m passionate about abstract
+          thinking and creatively applying quantitative methods and theory to
+          solve tricky puzzles. Having grown up in Indonesia, Shanghai, Hong
+          Kong, and now the U.S, I maintain a global perspective and a love for
+          diverse culture, intellectual approach, and interdisciplinary
+          collaboration.
         </Paragraph>
+
         <Box align="center" my={4}>
           <Button
             as={NextLink}
@@ -86,37 +95,49 @@ const Home = () => (
         </Box>
       </Section>
 
-      {/* Bio Section */}
+      {/* CV Section */}
       <Section delay={0.2}>
         <Heading as="h3" variant="section-title">
           CV
         </Heading>
 
         <BioSection mb={4}>
-          <BioYear>Education - (Exp. Grad. 2027)</BioYear>
-          B.S. Math, B. S Physics, CS Minor + Computational Phys. @ Indiana University — GPA: 3.7/4.0
+          <BioYear>Education – (Exp. Grad. 2027)</BioYear>
+          B.S. Math, B.S Physics, CS Minor + Computational Phys. @ Indiana
+          University — GPA: 3.7/4.0
         </BioSection>
 
         <BioSection mb={4}>
           <BioYear>Dec 2024 – Present</BioYear>
-          Research Assistant, Physics Dept., Indiana University — Ported legacy C++ code to be compatible with modern data formats for lorentz invariance analysis.
+          Research Assistant, Physics Dept., Indiana University — Ported legacy
+          C++ code to be compatible with modern data formats for lorentz
+          invariance analysis.
         </BioSection>
 
         <BioSection mb={4}>
           <BioYear>Jan 2025 – May</BioYear>
-          Research Assistant, Mathematics Dept., Indiana University — Developed Python/SageMath algorithms to analyze constant term sequences. Algorithmically found counterexamples to open conjecture, leading to publication.
+          Research Assistant, Mathematics Dept., Indiana University — Developed
+          Python/SageMath algorithms to analyze constant term sequences.
+          Algorithmically found counterexamples to open conjecture, leading to
+          publication.
         </BioSection>
 
         <BioSection mb={4}>
           <BioYear>Dec 2024 – Present</BioYear>
-          VP Quantitative Education, FinTech @ IU — Leading technical education; designing accessible mathematical intuition building for non-STEM members.
+          VP Quantitative Education, FinTech @ IU — Leading technical education;
+          designing accessible mathematical intuition building for non-STEM
+          members.
         </BioSection>
 
         <BioSection mb={4}>
-        <BioYear>August 2025 – Present</BioYear>
-        Personal Trainer, Student Recreational Sports Center (Indiana University) — Designed tailored fitness programs to meet diverse client goals. Educated participants on safe training techniques and sustainable health habits. Built strong client relationships to foster motivation and accountability while aligning with SRSC wellness objectives.
+          <BioYear>August 2025 – Present</BioYear>
+          Personal Trainer, Student Recreational Sports Center (Indiana
+          University) — Designed tailored fitness programs to meet diverse client
+          goals. Educated participants on safe training techniques and
+          sustainable health habits. Built strong client relationships to foster
+          motivation and accountability while aligning with SRSC wellness
+          objectives.
         </BioSection>
-
 
         <BioSection>
           <BioYear>Skills</BioYear>
@@ -131,14 +152,23 @@ const Home = () => (
         </Heading>
         <Paragraph>
           Pokémon markets:{' '}
-          <Link href="https://app.getcollectr.com/showcase/profile/b3ce4d3e-9157-4961-8d2e-12bfa841572b" target="_blank" rel="noopener noreferrer">
+          <Link
+            href="https://app.getcollectr.com/showcase/profile/b3ce4d3e-9157-4961-8d2e-12bfa841572b"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             collection
           </Link>{' '}
           &amp;{' '}
-          <Link href="https://www.ebay.com/usr/jccardscollectibles" target="_blank" rel="noopener noreferrer">
+          <Link
+            href="https://www.ebay.com/usr/jccardscollectibles"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             shop
           </Link>
-          , Guitar (JM Silver Sky), Fitness &amp; Personal Training (NASM CPT), Motorcycles (23&apos; ZX6R), and animated shows.
+          , Guitar (JM Silver Sky), Fitness &amp; Personal Training (NASM CPT),
+          Motorcycles (23&apos; ZX6R), and animated shows.
         </Paragraph>
       </Section>
 
@@ -148,22 +178,41 @@ const Home = () => (
           <Heading as="h3" variant="section-title">
             On the web
           </Heading>
+
           <List>
             <ListItem>
-              <Link href="https://github.com/jcbopit" target="_blank" rel="noopener noreferrer">
-                <Button variant="ghost" colorScheme="moss" leftIcon={<IoLogoGithub />}>
+              <Link
+                href="https://github.com/jcbopit"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Button
+                  variant="ghost"
+                  colorScheme="moss"
+                  leftIcon={<IoLogoGithub />}
+                >
                   @jcbopit
                 </Button>
               </Link>
             </ListItem>
 
             <ListItem>
-              <Link href="https://www.linkedin.com/in/justinoffutt" target="_blank" rel="noopener noreferrer">
-                <Button variant="ghost" colorScheme="moss" leftIcon={<IoLogoLinkedin />}>
+              <Link
+                href="https://www.linkedin.com/in/justinoffutt"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Button
+                  variant="ghost"
+                  colorScheme="moss"
+                  leftIcon={<IoLogoLinkedin />}
+                >
                   Justin Offutt
                 </Button>
               </Link>
             </ListItem>
+          </List>
+        </Box>
 
         <SimpleGrid columns={[1, 2, 2]} gap={6}>
           <GridItem
@@ -171,7 +220,8 @@ const Home = () => (
             title="My First Arxiv Paper"
             thumbnail={arxiv}
           >
-            Automatic Bounds on Constant Term Sequences Modulo Primes. LEMMA 2025, Department of Mathematics at Indiana University.
+            Automatic Bounds on Constant Term Sequences Modulo Primes. LEMMA
+            2025, Department of Mathematics at Indiana University.
           </GridItem>
 
           <GridItem
@@ -179,7 +229,9 @@ const Home = () => (
             title="Fintech Time Series Notes and Lecture"
             thumbnail={linkedintimeseries}
           >
-            Developed algorithms to identify counterexamples to a previously conjectured bound and proposed an alternate automaticity-based bound.
+            Developed algorithms to identify counterexamples to a previously
+            conjectured bound and proposed an alternate automaticity-based
+            bound.
           </GridItem>
         </SimpleGrid>
       </Section>
