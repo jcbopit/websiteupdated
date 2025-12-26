@@ -1,6 +1,6 @@
 import { Container, Heading, VStack, Button, Link } from '@chakra-ui/react'
 import { EmailIcon } from '@chakra-ui/icons'
-import { FaInstagram, FaLinkedin } from 'react-icons/fa'
+import { FaLinkedin } from 'react-icons/fa'
 
 const Contact = () => {
   return (
